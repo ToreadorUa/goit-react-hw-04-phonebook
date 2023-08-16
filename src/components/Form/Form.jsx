@@ -3,8 +3,8 @@ import { nanoid } from 'nanoid';
 import { Button, FormContainer, Input } from './Form.styled';
 
 export const Form = ({ contacts, addContact }) => {
-  const [name, setName] = useState('');
-  const [number, setNumber] = useState('');
+  const [name, setName] = useState();
+  const [number, setNumber] = useState();
 
   const handleChange = ({ target }) => {
     switch (target.name) {
