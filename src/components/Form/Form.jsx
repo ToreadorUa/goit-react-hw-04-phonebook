@@ -14,6 +14,7 @@ export const Form = ({ contacts, addContact }) => {
       case 'number':
         setNumber(target.value);
         break;
+      default:
     }
   };
   const handleSub = e => {
