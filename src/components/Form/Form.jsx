@@ -23,7 +23,7 @@ export const Form = ({ contacts, addContact }) => {
     if (
       contacts.some(el => el.name.toLowerCase().includes(name.toLowerCase()))
     ) {
-      alert(`${this.state.name} is already exist`);
+      alert(`${name} is already exist`);
       setName('');
       setNumber('');
       return;
